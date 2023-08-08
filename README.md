@@ -11,13 +11,16 @@ git submodule update
 ```
 
 compile:
-
-`flatpak-builder --force-clean build-dir com.github.JGRennison.OpenTTD-jgrpp.yaml`
+```
+flatpak-builder --force-clean build-dir com.github.JGRennison.OpenTTD-jgrpp.yaml
+```
 
 install:
-
-`flatpak-builder --user --install --force-clean build-dir com.github.JGRennison.OpenTTD-jgrpp.yaml`
+```
+flatpak-builder --user --install --force-clean build-dir com.github.JGRennison.OpenTTD-jgrpp.yaml
+```
 
 run:
-
-`flatpak run com.github.JGRennison.OpenTTD-jgrpp`
+```
+flatpak run com.github.JGRennison.OpenTTD-jgrpp
+```
