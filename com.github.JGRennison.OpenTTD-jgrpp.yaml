@@ -52,6 +52,8 @@ modules:
       - -DCMAKE_BUILD_TYPE:STRING=RelWithDebInfo
       - -DCMAKE_INSTALL_BINDIR:STRING=bin
     buildsystem: cmake-ninja
+    build-commands:
+      - install -Dm755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t ${FLATPAK_DEST}/lib
     builddir: true
     post-install:
       - install -D -m 644 -t $FLATPAK_DEST/share/icons/hicolor/scalable/apps ../media/openttd.svg
