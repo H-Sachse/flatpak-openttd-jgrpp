@@ -1,6 +1,6 @@
 app-id: com.github.JGRennison.OpenTTD-jgrpp
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: openttd
 rename-icon: openttd
@@ -14,8 +14,6 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
 modules:
-  - shared-modules/SDL2/SDL2-with-libdecor.json
-
   - shared-modules/linux-audio/fluidsynth2.json
 
   - name: opl3-soundfont
@@ -54,14 +52,15 @@ modules:
     buildsystem: cmake-ninja
     build-commands:
       - install -Dm755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t ${FLATPAK_DEST}/lib
+      - install -Dm755 /usr/lib/$(gcc -print-multiarch)/libsframe.so.* -t ${FLATPAK_DEST}/lib
     builddir: true
     post-install:
       - install -D -m 644 -t $FLATPAK_DEST/share/icons/hicolor/scalable/apps ../media/openttd.svg
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo ../com.github.JGRennison.OpenTTD-jgrpp.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/JGRennison/OpenTTD-patches/archive/refs/tags/jgrpp-0.54.5.tar.gz
-        sha256: e748686928b917b3dd0f09994c596edc74fa7d7e433d1a13d09a9b518a677f0f
+        url: https://github.com/JGRennison/OpenTTD-patches/archive/refs/tags/jgrpp-0.55.1.tar.gz
+        sha256: e7dd4810a82faaef5b6c2fe703546bca72a2ede44c05df8f5400662ac8b127b4
         x-checker-data:
           type: anitya
           project-id: 8640

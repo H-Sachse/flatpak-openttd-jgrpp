@@ -38,6 +38,8 @@
     <binary>openttd-jgrpp</binary>
   </provides>
   <releases>
+    <release version="v0.55.1" date="2023-09-05"/>
+    <release version="v0.55.0" date="2023-09-04"/>
     <release version="v0.54.5" date="2023-08-03"/>
   </releases>
   <content_rating type="oars-1.1"/>
