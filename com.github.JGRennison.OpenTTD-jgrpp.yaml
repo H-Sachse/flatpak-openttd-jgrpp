@@ -59,8 +59,8 @@ modules:
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo ../com.github.JGRennison.OpenTTD-jgrpp.metainfo.xml
     sources:
       - type: archive
-        url: https://github.com/JGRennison/OpenTTD-patches/archive/refs/tags/jgrpp-0.55.1.tar.gz
-        sha256: e7dd4810a82faaef5b6c2fe703546bca72a2ede44c05df8f5400662ac8b127b4
+        url: https://github.com/JGRennison/OpenTTD-patches/archive/refs/tags/jgrpp-0.55.3.tar.gz
+        sha256: 1661e151de14e53128344dd10b451db868f4b61289a84341a778d3921d78ec36
         x-checker-data:
           type: anitya
           project-id: 8640
