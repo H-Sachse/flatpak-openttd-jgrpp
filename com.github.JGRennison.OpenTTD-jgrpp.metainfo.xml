@@ -38,6 +38,7 @@
     <binary>openttd-jgrpp</binary>
   </provides>
   <releases>
+    <release version="v0.57.1" date="2024-02-04"/>
     <release version="v0.57.0" date="2024-01-30"/>
     <release version="v0.56.2" date="2023-12-31"/>
     <release version="v0.56.1" date="2023-12-09"/>
