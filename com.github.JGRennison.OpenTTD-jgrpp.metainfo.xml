@@ -16,7 +16,7 @@
       Additionally includes several patches adding improvements collected into JGRennison's patchj pack
     </p>
   </description>
-  <launchable type="desktop-id">openttd-jgrpp.desktop</launchable>
+  <launchable type="desktop-id">com.github.JGRennison.OpenTTD-jgrpp.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://www.openttd.org/screenshots/1.4-02-opengfx-1920x1200.png</image>
